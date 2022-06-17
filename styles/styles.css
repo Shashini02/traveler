@@ -130,24 +130,6 @@ table {
     line-height: 20px;
     position: relative;
 }
-/*@media only screen and (max-device-width: 1000px){
-    #Beachescontainer {
-        display: none;
-        text-align: center;
-        width: 100%;
-        justify-content: center; 
-        height: auto;  
-    }
-    #Beachescontainer .beach {
-        background: #87CEEB;
-        margin: 5px;
-        margin-bottom: 50px;
-        width: 100%;
-        padding: 20px;
-        line-height: 20px;
-        height: auto;
-    }
-}*/
 #mainImg2 {
     max-width: 100%;
 }
@@ -166,35 +148,17 @@ table {
     line-height: 20px;
     position: relative;
 }
-/*@media only screen and (max-device-width: 1000px){
-    #wildlifecontainer {
-        display: none;
-        text-align: center;
-        width: 100%;
-        justify-content: center;
-        height: auto;
-    }
-    #wildlifecontainer .wildlife {
-        background: #87CEEB;
-        margin: 5px;
-        margin-bottom: 50px;
-        width: 100%;
-        height: auto;
-        padding: 20px;
-        line-height: 20px;
-    }
-}*/
 table {
     width: 100%;
     background-color: lightcyan;
 }
-@media only screen and (max-device-width: 1000px){
+/*@media only screen and (max-device-width: 1000px){
     table {
         width: 100%;
         background-color: lightcyan;
         height: auto;
     }
-}
+}*/
 #mainIm {
     max-width: 100%;
     height: auto;
