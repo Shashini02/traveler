@@ -315,6 +315,13 @@ h3 {
 #flight {
     padding-right: 10px;
 }
+@media only screen and(max-device-width: 1000px){
+    #flight {
+        padding-right: 10px;
+        width: 100%;
+        height: auto;
+    }
+}
 .home2 {
     display: flex;
 }
