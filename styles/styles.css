@@ -322,6 +322,8 @@ h3 {
     .home1 {
         flex-direction: column;
     }
+}
+@media only screen and (max-device-width: 1000px){
     .home2 {
         flex-direction: column;
     }
