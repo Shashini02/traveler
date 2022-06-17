@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: powderblue;
+}
+.mainNav {
+    position: sticky;
+    top: 0;
+}
+.mainNav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:gainsboro ;
+}
+.mainNav li {
+    float: left;
+}
+.mainNav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.mainNav a:hover {
+    background-color: gainsboro;
+}
+@media only screen and (max-device-width: 1000px){
+    .mainNav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:gainsboro ;
+        width: 100%;
+    }
+    .mainNav li {
+        float: left;
+        width: 100%;
+    }
+}
+header, footer {
+    background-color: #4682b4;
+    padding: 1em;
+}
+h1 {
+    text-align: center;
+}
+#mainImgg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#sigiriyacontainer {
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center 
+}
+#sigiriyacontainer .s1 {
+    background: #191970;
+    color: #fff;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 400px;
+    padding: 20px;
+    line-height: 20px;
+    position: relative;
+}
+@media only screen and (max-device-width: 1000px){
+    #sigiriyacontainer {
+        display: none;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        height: auto;
+    }
+    #sigiriyacontainer .s1 {
+        background: #191970;
+        color: #fff;
+        margin: 5px;
+        margin-bottom: 50px;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        line-height: 20px;
+        position: relative;
+    }
+}
+.container {
+    max-width: 100%;
+    margin: auto;
+    overflow: auto;
+    text-align: center;
+    justify-content: center;
+}
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180PX;
+}
+.gallery:hover {
+    border: 1px solid #777;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+@media only screen and (max-device-width: 1000px){
+    .gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .gallery:hover {
+        border: 1px solid #777;
+    }
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+    .desc {
+        padding: 15px;
+        text-align: center;
+    }
+}
+video {
+    width: 100%;
+}
+#compass {
+    display: flex;
+}
+#compass img:hover {
+    transform: rotate(180deg);
+}
