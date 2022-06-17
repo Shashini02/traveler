@@ -354,6 +354,13 @@ h3 {
 #marvel {
     padding-bottom: 5px;
 }
+@media only screen and (max-device-width: 1000px){
+    #marvel {
+        padding-bottom: 5px;
+        width: 100%;
+        height: auto;
+    }
+}
 .homee {
     background-color: #5F9EA0;
 }
