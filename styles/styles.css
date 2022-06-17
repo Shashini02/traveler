@@ -130,7 +130,7 @@ table {
     line-height: 20px;
     position: relative;
 }
-@media only screen and (max-device-width: 1000px){
+/*@media only screen and (max-device-width: 1000px){
     #Beachescontainer {
         display: none;
         text-align: center;
@@ -147,7 +147,7 @@ table {
         line-height: 20px;
         height: auto;
     }
-}
+}*/
 #mainImg2 {
     max-width: 100%;
 }
@@ -166,7 +166,7 @@ table {
     line-height: 20px;
     position: relative;
 }
-@media only screen and (max-device-width: 1000px){
+/*@media only screen and (max-device-width: 1000px){
     #wildlifecontainer {
         display: none;
         text-align: center;
@@ -183,7 +183,7 @@ table {
         padding: 20px;
         line-height: 20px;
     }
-}
+}*/
 table {
     width: 100%;
     background-color: lightcyan;
@@ -312,6 +312,16 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     border: 5px solid #000080;
+}
+@media only screen and (max-device-width: 1000px){
+    #map {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 5px solid #000080;
+        width: 100%;
+        height: auto;
+    }
 }
 #marvel {
     padding-bottom: 5px;
