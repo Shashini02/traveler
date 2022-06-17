@@ -130,6 +130,24 @@ table {
     line-height: 20px;
     position: relative;
 }
+@media only screen and (max-device-width: 1000px){
+    #Beachescontainer {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        justify-content: center;  
+    }
+    #Beachescontainer .beach {
+        background: #87CEEB;
+        margin: 5px;
+        margin-bottom: 50px;
+        width: 100%;
+        padding: 20px;
+        line-height: 20px;
+        position: relative;
+        height: auto;
+    }
+}
 #mainImg2 {
     max-width: 100%;
 }
@@ -147,6 +165,24 @@ table {
     padding: 20px;
     line-height: 20px;
     position: relative;
+}
+@media only screen and (max-device-width: 1000px){
+    #wildlifecontainer {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        justify-content: center
+    }
+    #wildlifecontainer .wildlife {
+        background: #87CEEB;
+        margin: 5px;
+        margin-bottom: 50px;
+        width: 100%;
+        padding: 20px;
+        line-height: 20px;
+        position: relative;
+        height: auto;
+    }
 }
 table {
     width: 100%;
@@ -177,6 +213,24 @@ table {
     padding: 20px;
     line-height: 20px;
     position: relative;
+}
+@media only screen and (max-device-width: 1000px){
+    #activitiescontainer {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        justify-content: center 
+    }
+    #activitiescontainer .activities {
+        background: #87CEEB;
+        margin: 5px;
+        margin-bottom: 50px;
+        width: 100%;
+        padding: 20px;
+        line-height: 20px;
+        position: relative;
+        height: auto;
+    }
 }
 input[type=text], select, textarea {
     width: 100%;

@@ -55,6 +55,15 @@ h1 {
     margin-right: auto;
     width: 50%;
 }
+@media only screen and (max-device-width: 1000px){
+    #mainImgg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+    }    
+}
 #sigiriyacontainer {
     display: flex;
     text-align: center;
@@ -73,7 +82,7 @@ h1 {
 }
 @media only screen and (max-device-width: 1000px){
     #sigiriyacontainer {
-        display: none;
+        flex-direction: column;
         text-align: center;
         width: 100%;
         justify-content: center;

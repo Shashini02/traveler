@@ -58,6 +58,15 @@ h2 {
     margin-right: auto;
     width: 50%;
 }
+@media only screen and (max-device-width: 1000px){
+    #mainImggg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+    }
+}
 #polonnaruwacontainer {
     background-color: lightcyan;
 }
@@ -86,10 +95,10 @@ h2 {
         padding: 50px;
     }
     .gallery img {
-        display: none;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
+        height: auto;
     }
     .gallery:hover {
         border: blueviolet;
@@ -113,6 +122,14 @@ h2 {
 }
 .p3 {
     display: flex;
+}
+@media only screen and (max-device-width: 1000px){
+    .p1 {
+        flex-direction: column;
+    }
+    .p3 {
+        flex-direction: column;
+    }
 }
 video {
     padding: 20px;
