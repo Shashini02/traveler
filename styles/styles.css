@@ -619,44 +619,6 @@ h3 {
     position: relative;
     display: block;
 }
-/*.Donateus {
-    margin: auto;
-    margin-top: 70px;
-    padding-bottom: 50px;
-    width: 80%;
-    background-color: #87CEEB;;
-    box-shadow: 0 0 40px 0px #4682b4;
-    border-radius: 30px;
-    display: block;
-}
-.Donateus h2{
-    text-align: center;
-    padding-top: 5px;
-}
-#fixedDonations {
-    display: block;
-    color: #000080;
-    margin-top: 10px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    width: 100%;
-    text-align: center;
-    font-size: 20px;
-}
-.donateForm {
-    margin-bottom: 30px;
-    background-color: #fff;
-    overflow: hidden;
-    box-shadow: #4682b4;
-    border-radius: 30px;
-    padding: 20px;
-    height: auto;
-    margin: auto;
-    width: 80%;
-}
-.payment {
-    width: 80%;
-}*/
 .form1 {
     margin: auto;
     margin-top: 70px;
