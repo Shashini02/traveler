@@ -26,78 +26,218 @@
         </nav>
         <main>
             <article>
-                <h2>Donate now</h2>
-                <h3>A big thank you to our very generous sponsors! We offer several sponsorship levels and welcome donations for our events. Please contact us for more information!</h3>
-                <div class="donateContainer">
-                  <form>
-                    <div class="row">
-                      <div class="col-25">
-                        <label for="fname">First Name</label>
-                      </div>
-                      <div class="col-75">
-                        <input type="text" id="faname" name="firstname" placeholder="Your name...">
-                      </div>
+              <h2 class="pur1">Goods for purchase</h2>
+              <div id="purchaseContainer">
+                <section class="purchase">
+                  <h3>Gemstones</h3>
+                  <img src="images/gemstones.webp" alt="gems" width="400" height="200">
+                  <p>Sri Lanka is regarded as one of the top producers of gemstones in the world. It has the highest density of gemstones and is a major supplier of precious gemstones.</p>
+                  <p>
+                    <button type="submit" id="purchasebtn">Buy Now</button>
+                  </p>
+                </section>
+                <section class="purchase">
+                  <h3>Ceylon Tea</h3>
+                  <img src="images/tea.webp" alt="tea" width="400" height="200">
+                  <p>Ceylon tea is famed for it's outstanding quality and superior, unparalleled taste and variety of tea.</p>
+                  <p>
+                    <button type="submit" id="purchasebtn">Buy Now</button>
+                  </p>
+                </section>
+                <section class="purchase">
+                  <h3>Wooden Masks</h3>
+                  <img src="images/masks.webp" alt="mask" width="400" height="200">
+                  <p>Wooden handcrafted Sri Lankan traditional masks depicting the real beauty of Sri Lankan Art & Handicrafts.</p>
+                  <p>
+                    <button type="submit" id="purchasebtn">Buy Now</button>
+                  </p>
+                </section>
+              </div>
+              <h2 class="donate1">Donate Now</h2>
+              <div id="donationContainer">
+                <section class="donation">
+                <h3>Help Save A World Heritage Site</h3>
+                <img src="images/heritage.webp" alt="heritage" width="400" height="200">
+                <p>Your donation will be used directly to protect Sri Lanka's heritage sites.</p>
+                <!--<p>
+                  <button type="submit" id="donatebtn">Donate</button>
+                </p>-->
+                </section>
+                <section class="donation">
+                  <h3>Donate To Save Wild Animals</h3>
+                  <img src="images/wildanimals.webp" alt="wildanimals" width="400" height="200">
+                  <p>You can protect threatened species and their habitats with a donation.</p>
+                  <!--<p>
+                    <button type="submit" id="donatebtn">Donate</button>
+                  </p>-->
+                </section>
+              </div>
+                <!--<div class="donateMain">
+                <section class="Donateus">
+                  <h2><i>For Donations</i></h2>
+                  <form class="donateForm">
+                    <div class="inputBox">
+                    <span>Name:</span>
+                    <input type="text" id="name" placeholder="Enter your name" required>
                     </div>
-                    <div class="row">
-                      <div class="col-25">
-                        <label for="lname">Last name</label>
-                      </div>
-                      <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
-                      </div>
+                    <div class="inputBox">
+                    <span>Email:</span>
+                    <input type="text" id="email" placeholder="Enter your email" required >
                     </div>
-                    <div class="row">
-                      <div class="col-25">
-                        <label for="country">Country</label>
-                      </div>
-                      <div class="col-75">
-                        <select id="country" name="country">
-                          <option value="Australia">Australia</option>
-                          <option value="Canada">Canada</option>
-                          <option value="USA">USA</option>
+                    <div class="inputBox">
+                    <span>Address:</span>
+                    <textarea  rows="address" id="address" placeholder="Enter your address" required ></textarea>
+                    </div>
+                    <label for="Donations" id="fixedDonations">Select Any Fixed Donation Value</label>
+                    <select class="fixedValues">
+                      <option value="100">LKR 100</option>
+                      <option value="250">LKR 250</option>
+                      <option value="500">LKR 500</option>
+                      <option value="1000">LKR 1000</option>
+                      <option value="2500">LKR 2500</option>
+                      <option value="5000">LKR 5000</option>
+                      <option value="10000">LKR 10000</option>
+                    </select>
+                  </form>
+                  <form class="payment">
+                    <h3>Card Details</h3>
+                    <div class="inputBox">
+                      <span>Card Number:</span>
+                      <label for="cardno"></label>
+                      <input type="text" id="cardno">
+                    </div>
+                    <div class="inputBox">
+                      <span>Card Holder:</span>
+                      <label for="cardholder"></label>
+                      <input type="text" id="cardHolder">
+                    </div>
+                    <div class="flexbox">
+                      <div class="inputBox">
+                        <span>expiration month</span>
+                        <select class="exmonth" id="exmonth">
+                                <option value="month" selected disabled>Month</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
                         </select>
                       </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-25">
-                        <label for="subject">Subject</label>
+                      <div class="inputBox">
+                        <span>expiration year</span>
+                        <select class="exyear" id="exyear">
+                                <option value="year" selected disabled>Year</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>  
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                        </select>
                       </div>
-                      <div class="col-75">
-                        <textarea id="subject" name="subject" placeholder="Write Something..." style="height: 200px;"></textarea>
+                      <div class="inputBox" id="cvv">
+                        <span>cvv</span>
+                        <input type="text" maxlength="3" id="cvv">
                       </div>
                     </div>
-                    <br>
-                    <div class="row">
-                      <input type="submit" value="Submit">
-                    </div>
+                    <input type="button" value="Donate" id="donateBtn" class="submitbtn" onclick="inputValidation();">
                   </form>
-                </div>
-                <h3>Reach Us</h3>
-                <div id="donateContainer">
-              <section class="donate">
-                <img src="images/telephone-icon.png" width="50" height="50">
-                <h4>0123456789</h4>
+                </section>
+                </div>-->
+                <form class="form1" onsubmit="donationfunction(event)">
+                  <div class="formheader"><i>For Donations</i></div>
+                  <div class="donationForm">
+                    <div class="donate">
+                      <div class="inputBox">
+                        <label>First Name:</label>
+                        <input type="text" id="fname" required>
+                      </div>
+                      <div class="inputBox">
+                        <label>Date of Birth:</label>
+                        <input type="date" id="baday" required>
+                      </div>
+                      <div class="inputBox">
+                        <label>Email:</label>
+                        <input type="email" id="email" required>
+                      </div>
+                      <div class="inputBox">
+                        <label>Phone Number:</label>
+                        <input type="text" id="mobile" required>
+                      </div>
+                      <div class="fDonations">
+                      <label for="Donations" id="fixedDonations">Select Any Fixed Donation Value</label>
+                    <select class="fixedValues">
+                      <option value="100">LKR 100</option>
+                      <option value="250">LKR 250</option>
+                      <option value="500">LKR 500</option>
+                      <option value="1000">LKR 1000</option>
+                      <option value="2500">LKR 2500</option>
+                      <option value="5000">LKR 5000</option>
+                      <option value="10000">LKR 10000</option>
+                    </select>
+                      </div>
+                      <div class="inputBox">
+                        <label>Card Holder's Name:</label>
+                        <input type="text" id="holdersname" required>
+                      </div>
+                      <div class="inputBox">
+                        <label>Card Number:</label>
+                        <input type="text" id="cardNo" required>
+                      </div>
+                      <div class="inputBox">
+                        <label>CVV No</label>
+                        <input type="text" id="cvv" required>
+                      </div>
+                      <div class="form2Btn">
+                      </div><br>
+                      <input type="submit" value="Donate" class="submitbtn" onclick="(function() { alert('Thank you for your donation') })()">
+                    </div>
+                    </div>
+                  </div>
+                </form>
+              <h3>Reach Us</h3>
+              <div id="donateContainer">
+            <section class="donate">
+              <img src="images/telephone-icon.png" width="50" height="50">
+              <h4>0123456789</h4>
+            </section>
+            <section class="donate">
+              <img src="images/email-icon.png" width="50" height="50">
+              <h4>traveler@gmail.com</h4>
+            </section>
+            <section class="donate">
+              <img src="images/address-icon.png" width="50" height="50">
               </section>
-              <section class="donate">
-                <img src="images/email-icon.png" width="50" height="50">
-                <h4>traveler@gmail.com</h4>
-              </section>
-              <section class="donate">
-                <img src="images/address-icon.png" width="50" height="50">
-                <h4>address</h4>
-              </section>
-                </div>
+            </div>
             </article>
         </main>
         <footer>
-          <nav>
+          <div class="footer">
+            <div class="Qlinks">
+            <h2>Quick Links</h2>
             <ul>
-              <li><a href="#">Help</a></li>
-              <li><a href="#">Privacy and Terms</a></li>
-              <li><a href="#">User Agreement</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="wildlife.html">Wild Life</a></li>
+              <li><a href="beaches.html">Beaches</a></li>
+              <li><a href="activities.html">Activities</a></li>
+              <li><a href="sigiriya.html">Sigiriya</a></li>
+              <li><a href="polonnaruwa.html">Polonnaruwa</a></li>
+              <li><a href="donate.html">Purchase & Donate</a></li>
             </ul>
-          </nav>
+          </div>
+          </div>
         </footer>
     </div>
+    <script src="javascript/main.js"></script>
   </body>
 </html>

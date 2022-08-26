@@ -61,22 +61,163 @@
               <div class="desc">Surfing in Arugam Bay</div>
             </div>
           </article>
+          <article>
+          <section class="main">
+            <h1>Book your ticket now</h1>
+            <div class="purchaseContainer">
+                <div class="ticketpurchase">
+                    <div class="ticketpass">
+                        <h1>Local Pass</h1>
+                    </div>
+                    <div class="ticketpassprice">
+                        <p class="priceinnum">LKR 1000</p>
+                        <p class="priceintxt">For Adult</p><br>
+                        <p class="priceinnum">LKR 500</p>
+                        <P class="priceintxt">For Child</P><br>
+                    </div>
+                </div>
+
+                <div class="ticketpurchase">
+                    <div class="ticketpass">
+                        <h1>Foreign Pass</h1>
+                    </div>
+                    <div class="ticketpassprice">
+                        <p class="priceinnum">LKR 5000</p>
+                        <p class="priceintxt">For Adult</p><br>
+                        <p class="priceinnum">LKR 2500</p>
+                        <P class="priceintxt">For Child</P><br>
+                    </div>
+                </div>
+
+                <div class="ticketpurchase">
+                    <div class="ticketpass">
+                        <h1>Annual Pass</h1>
+                    </div>
+                    <div class="ticketpassprice">
+                        <p class="priceinnum">LKR 4500</p>
+                        <p class="priceintxt">For Local</p><br>
+                        <p class="priceinnum">LKR 15000</p>
+                        <P class="priceintxt">For Foreign</P><br>
+                    </div>
+                </div>
+            </div>
+            <div class="form" id="box">
+              <form class="formfortickets" id="formform">
+                <div class="inputbox">
+                  <select id="typeofTicket" name="typeofTicket" class="choose" onchange="calculateCost();">
+                    <option value="" selected disabled>Select your Ticket type</option>
+                    <option value="0">Local Pass</option>
+                    <option value="1">Foreign Pass</option>
+                    <option value="2">Annual Pass</option>
+                  </select>
+                </div>
+                <div class="inputbox">
+                  <select id="duration" name="duration" class="choose" onchange="calculateCost();">
+                    <option value="" selected disabled>Select the Duration</option>
+                    <option value="0">3 hours</option>
+                    <option value="1">Hlaf-day</option>
+                    <option value="2">Full day</option>
+                    <option value="3">Two days</option>
+                  </select>
+                </div>
+                <h3><i>No of Tickets</i></h3>
+                <div class="flexbox" id="ticketAmounts">
+                  <div class="inputBox">
+                    <h4>No of Adults:</h4>
+                  <input id="noOfAdult" name="noOfAdult" min="0" type="number" placeholder="Enter Number of Adults" onblur="calculateCost();">
+                  </div>
+                  <div class="inputBox">
+                    <h4>No of Children:</h4>
+                      <input id="noOfChild" name="noOfChild" min="0" type="number" placeholder="Enter Number of Children" onblur="calculateCost();">
+                  </div>
+              </div>
+              <div id="extra">
+                <h3><i>Extra Items</i></h3>
+                <div class="flexbox">
+                  <div class="inputBox">
+                    <h4>No of Annual Passes:</h4>
+                    <input id="noofPasses" name="noofPasses" min="0" type="number" placeholder="Enter Number of Passes" onblur="calculateCost();">
+                  </div>
+                  <div class="inputBox">
+                    <h4>No of Food Tokens:</h4>
+                    <input id="noofTokens" name="noofTokens" min="0" type="number" placeholder="Enter Number of Tokens" onblur="calculateCost();">
+                  </div>
+                </div>
+              </div>
+              <div class="order" style="display: none;"></div>
+              <p id="currentOrder">Cost of the current order: LKR <span id="currentcost">0.00</span></p>
+              <div class="" id="button">
+                <input type="button" id="addtoFav" value="Add to Favourite">
+                <input type="button" id="orderFav" value="Order Favourite">
+              </div>
+
+              <input type="button" id="addtoOrder" value="Add to Order" class="submitbtn">
+
+              <div id="Table">
+                <table id="tabelOrder" style="display:none;">
+                  <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>Adult</th>
+                      <th>Children</th>
+                      <th>Duration</th>
+                      <th>Total</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="tbody"></tbody>
+                  <tfoot>
+                    <tr id="tabelrow1">
+                      <th colspan="4">Food Tokens</th>
+                      <th colspan="1" id="thFtokens1">0</th>
+                      <th colspan="1" id="thFtokens2">0.00</th>
+                      <th colspan="1"><a href='javascript:void(0)' style='color:red;font-weight:bold' onclick='removeFoodTokens();'><img src ='images/recycle bin.png' id ='recycleBin' alt ='recyclebin' ></a></th>
+                    </tr>
+                    <tr id="tabelrow2">
+                      <th colspan="4">Annual Passes</th>
+                      <th colspan="1" id="thAnnpasses1">0</th>
+                      <th colspan="1" id="thAnnpasses2">0.00</th>
+                      <th colspan="1"><a href='javascript:void(0)' style='color:red;font-weight:bold' onclick='removeFoodTokens();'><img src ='images/recycle bin.png' id ='recycleBin' alt ='recyclebin' ></a></th>
+                    </tr>
+                    <tr id="tabelrow3">
+                      <th colspan="4">Total</th>
+                      <th colspan="2" style="text-align:center;"> LKR <span id="total">0.00</span></th>
+                      <th colspan="1"></th>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              </form>
+            </div>
+            <input id="checkloyalityPoints" type="button" value="Check Loyality Points" class="submitbtn" onclick="showloyaltyPoints();">
+            <p id="overallOrder">Cost of the Overall order : LKR <span id="overallGtotal">0.00</span></p>
+            <input id="placeOrder" type="button" value="Place Order" class="submitbtn">
+        </section>
+      </article>
       </main>
       <footer>
-        <nav>
+        <div class="footer">
+          <div class="Qlinks">
+          <h2>Quick Links</h2>
           <ul>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Privacy and Terms</a></li>
-            <li><a href="#">User Agreement</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="wildlife.html">Wild Life</a></li>
+            <li><a href="beaches.html">Beaches</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="sigiriya.html">Sigiriya</a></li>
+            <li><a href="polonnaruwa.html">Polonnaruwa</a></li>
+            <li><a href="donate.html">Purchase & Donate</a></li>
           </ul>
-        </nav>
-        <p>Reference:</p>
+        </div>
+        </div>
+        <!--<p>Reference:</p>
         <ul>
           <li><a href="https://roar.media/english">Hiking</a></li>
           <li><a href="https://www.talallahouse.com">Safari</a></li>
           <li><a href="https://lushpalm.com">Surfing</a></li>
-        </ul>
+        </ul>-->
       </footer>
     </div>
+    <script src="javascript/main.js"></script>
   </body>
 </html>

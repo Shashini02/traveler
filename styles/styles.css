@@ -233,54 +233,11 @@ table {
     }
 }
 input[type=text], select, textarea {
-    width: 100%;
+    width: 50%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-}
-  
-label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-}
-  
-input[type=submit] {
-    background-color: black;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-}
-  
-input[type=submit]:hover {
-    background-color: green;
-}
-  
-.donateContainer {
-    border-radius: 5px;
-    background-color: #000080;
-    color: #fff;
-    padding: 20px;
-}
-  
-.col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-}
-  
-.col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-}
-.row:after {
-        content: "";
-        display: table;
-        clear: both;
 }
 #donateContainer {
     display: flex;
@@ -389,4 +346,350 @@ h3 {
     .home5 {
         flex-direction: column;
     }
+}
+footer {
+    max-width: 100%;
+    display: flex;
+}
+.footer {
+    width: 100%;
+}
+.Qlinks {
+    width: 100%
+}
+
+#purchaseContainer {
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center; 
+    border: #000;  
+}
+#purchaseContainer .purchase {
+    background: #87CEEB;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 400px;
+    padding: 20px;
+    line-height: 20px;
+    position: relative;
+}
+.pur1 , .donate1 {
+    text-align: center;
+}
+#purchasebtn , #donatebtn {
+    font-size: larger;
+}
+#donationContainer {
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;   
+}
+#donationContainer .donation {
+    background: #87CEEB;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 400px;
+    padding: 20px;
+    line-height: 20px;
+    position: relative;
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    padding-bottom: 50px;
+    box-shadow: 0 0 40px 0px #4682b4;
+    background-color: #87CEEB;
+    border-radius: 30px;
+}
+.main h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+.main p {
+    font-size: 20px;
+}
+.main h1 , .main p {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+.purchaseContainer {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    flex-basis: 33%;
+    display: flex;
+}
+.ticketpurchase {
+    width: 100%;
+    box-shadow: 0 0 5px #87CEEB;
+    overflow: hidden;
+    font-size: 10px;
+    line-height: 1.5;
+    color: #000;
+    margin: 10px;
+    
+}
+.ticketpass {
+    background-color: #4682b4;
+}
+.ticketpass h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+.ticketpass p {
+    font-size: 10px;
+    font-weight: 100;
+}
+.ticketpassprice {
+    width: 95%;
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgb(19,19,19);
+    overflow: hidden;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #555555;
+    margin: 15px;
+}
+.priceinnum {
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
+    color: #000;
+}
+.priceintxt {
+    font-size: 0.9em;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+.form {
+    overflow: hidden;
+    padding: 20px;
+    width: 65%;
+    padding-top: 20px;
+    margin: auto;
+    margin-bottom: 25px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 powderblue;
+}
+.formfortickets {
+    margin-bottom: 25px;
+}
+.form form {
+    width: 75%;
+    padding: 0;
+    margin: auto;
+}
+.inputBox {
+    margin-top: 10px;
+    border: #000;
+    padding: 10px;
+    vertical-align: middle;
+   display: flex;
+}
+.choose {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    color: #000;
+    border: #4682b4;
+    margin-bottom: 10px;
+}
+.flexbox {
+    display: flex;
+    padding: 10px;
+}
+#noOfAdult , #noOfChild{
+    padding: 10px;
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+    display: flexbox;
+    vertical-align: middle;
+    width: 100%;
+    padding-left: 10px;
+}
+#noofPasses , #noofTokens {
+    padding: 10px;
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    display: flexbox;
+    vertical-align: middle;
+    width: 100%;
+}
+h3 {
+    text-align: center;
+}
+.submitbtn {
+    width: 100%;
+    display: flexbox;
+    padding: 10px;
+    margin-left: 0%;
+    text-align: center;
+    background: #000080;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.submitbtn:hover {
+    opacity: .8;
+    letter-spacing: 2px;
+}
+#extra {
+    margin-top: 15px;
+}
+#tabelrow1 {
+    border-top: solid #4682B4 3px;
+}
+#tabelrow3 {
+    border-top: solid #4682B4 6px;
+    border-bottom: solid #4682B4 6px;
+}
+#Tabel {
+    margin: auto;
+    padding: 7px;
+    margin-top: 10px;
+}
+#button {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+}
+#addtoFav {
+    padding: 15px;
+    margin-right: 5px;
+}
+#orderFav {
+    padding: 15px;
+    margin-left: 5px;
+}
+#addtoFav:hover {
+    letter-spacing: 2px;
+    opacity: .8;
+}
+#orderFav:hover {
+    letter-spacing: 2px;
+    opacity: .8;
+}
+#addtoFav , #orderFav {
+    width: 100%;
+    flex-basis: 50%;
+    background: #4682B4;
+    color: #fff;
+    display: inline-block;
+    border-radius: 10px;
+}
+#checkloyalityPoints {
+    margin-bottom: 20px;
+}
+#currentOrder {
+    margin-top: 15px;
+}
+#currentOrder , #overallOrder {
+    font-style: initial;
+}
+#order {
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    opacity: 80%;
+    border-radius: 20px;
+    outline-width: 3px;
+    border: #4682B4 3px solid;
+    outline-color: #4682B4;
+}
+#recycleBin {
+    padding: 0;
+    min-height: 30px;
+    max-width: 30px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+/*.Donateus {
+    margin: auto;
+    margin-top: 70px;
+    padding-bottom: 50px;
+    width: 80%;
+    background-color: #87CEEB;;
+    box-shadow: 0 0 40px 0px #4682b4;
+    border-radius: 30px;
+    display: block;
+}
+.Donateus h2{
+    text-align: center;
+    padding-top: 5px;
+}
+#fixedDonations {
+    display: block;
+    color: #000080;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+.donateForm {
+    margin-bottom: 30px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: #4682b4;
+    border-radius: 30px;
+    padding: 20px;
+    height: auto;
+    margin: auto;
+    width: 80%;
+}
+.payment {
+    width: 80%;
+}*/
+.form1 {
+    margin: auto;
+    margin-top: 70px;
+    padding-bottom: 50px;
+    width: 80%;
+    background-color: #87CEEB;;
+    box-shadow: 0 0 40px 0px #4682b4;
+    border-radius: 30px;
+    display: block;
+}
+.formheader {
+    text-align: center;
+    padding-top: 10px;
+    font-size: larger;
+}
+#fixedDonations {
+    display: block;
+    color: #000080;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+.donationForm {
+    margin-bottom: 30px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: #4682b4;
+    border-radius: 30px;
+    padding: 20px;
+    height: auto;
+    margin: auto;
+    width: 80%;
 }
