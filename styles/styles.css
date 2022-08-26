@@ -380,6 +380,23 @@ footer {
 #purchasebtn , #donatebtn {
     font-size: larger;
 }
+@media only screen and (max-device-width: 1000px){
+    #purchaseContainer {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        justify-content: center ;
+    }
+    #purchaseContainer .purchase{
+        background: #87CEEB;
+        margin: 5px;
+        margin-bottom: 50px;
+        width: 400px;
+        padding: 20px;
+        line-height: 20px;
+        position: relative;
+    }
+}
 #donationContainer {
     display: flex;
     text-align: center;
@@ -395,7 +412,24 @@ footer {
     line-height: 20px;
     position: relative;
 }
-
+@media only screen and (max-device-width: 1000px){
+    #donationContainer {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        justify-content: center     
+    }
+    #donationContainer .donation {
+        background: #87CEEB;
+        margin: 5px;
+        margin-bottom: 50px;
+        width: 100%;
+        padding: 20px;
+        line-height: 20px;
+        position: relative;
+        height: auto;
+    }
+}
 .main {
     width: 80%;
     margin: auto;
